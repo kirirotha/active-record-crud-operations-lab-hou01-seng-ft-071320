@@ -66,13 +66,13 @@ end
 
 def can_be_found_updated_and_saved
   # Updtate the title "Awesome Flick" to "Even Awesomer Flick", save it, then return it
-  binding.pry
-  Movie.create(title: "Awesome Flick")
   #binding.pry
-  movie.update(title: "Even Awesomer Flick")
-  movie.save
+  #Movie.create(title: "Awesome Flick")
   #binding.pry
-  movie
+  Movie.update(title: "Even Awesomer Flick")
+  Movie.save
+  #binding.pry
+  Movie
 end
 
 def can_update_using_update_method
